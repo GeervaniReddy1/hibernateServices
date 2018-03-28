@@ -24,7 +24,6 @@ public class StudentDemo {
 			//Student tempStudent1 = new Student("gre2","weel2","h2rev@luv2code.com");
 			
 			session.beginTransaction();
-			System.out.println("saving the student");
 			session.save(tempStudent);
 			//session.save(tempStudent1);
 			session.getTransaction().commit();
