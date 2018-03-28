@@ -21,12 +21,12 @@ public class StudentDemo {
 			// System.out.println("creating new student object...");
 			
 			Student tempStudent = new Student("gre1","weel1","h1rev@luv2code.com");
-			Student tempStudent1 = new Student("gre2","weel2","h2rev@luv2code.com");
+			//Student tempStudent1 = new Student("gre2","weel2","h2rev@luv2code.com");
 			
 			session.beginTransaction();
 			System.out.println("saving the student");
 			session.save(tempStudent);
-			session.save(tempStudent1);
+			//session.save(tempStudent1);
 			session.getTransaction().commit();
 			System.out.println("done");
 		}
